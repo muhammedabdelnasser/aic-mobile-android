@@ -10,6 +10,7 @@ import io.reactivex.Flowable
 
 @Dao
 interface ArticObjectDao {
+    // TODO: delete this function; I don't see a compelling reason to keep it
     @Query("select * from ArticObject limit 1")
     fun getFirstObject(): ArticObject
 
